@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Understanding Anxiety Types - Easeup</title>
+    <meta name="description" content="Explore the 10 main types of anxiety disorders and learn about their symptoms, causes, and treatment options.">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script defer src="js/fontawesome/all.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch Icon2.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32 2.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon 16x16 2.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <style>
+        .anxiety-types-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            padding: 3rem 0;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .anxiety-card {
+            background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+            cursor: pointer;
+            position: relative;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .anxiety-card:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+        }
+        
+        .anxiety-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, var(--card-color, #667eea), var(--card-color-secondary, #764ba2));
+            transition: height 0.3s ease;
+        }
+        
+        .anxiety-card:hover::before {
+            height: 8px;
+        }
+        
+        .anxiety-icon {
+            width: 80px;
+            height: 80px;
+            margin: 2rem auto 1.5rem;
+            background: linear-gradient(135deg, var(--card-color, #667eea), var(--card-color-secondary, #764ba2));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: white;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+        
+        .anxiety-card:hover .anxiety-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+        
+        .anxiety-info {
+            padding: 0 2rem 2.5rem;
+            text-align: center;
+        }
+        
+        .anxiety-title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 0.8rem;
+            color: #2d3748;
+            line-height: 1.3;
+        }
+        
+        .anxiety-severity {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 1rem;
+        }
+        
+        .severity-mild {
+            background: rgba(72, 187, 120, 0.2);
+            color: #38a169;
+        }
+        
+        .severity-moderate {
+            background: rgba(237, 137, 54, 0.2);
+            color: #dd6b20;
+        }
+        
+        .severity-severe {
+            background: rgba(245, 101, 101, 0.2);
+            color: #e53e3e;
+        }
+        
+        .anxiety-description {
+            font-size: 1rem;
+            color: #4a5568;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+        
+        .anxiety-symptoms {
+            background: rgba(0,0,0,0.03);
+            border-radius: 12px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .symptoms-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+        
+        .symptoms-list {
+            font-size: 0.85rem;
+            color: #718096;
+            line-height: 1.5;
+        }
+        
+        .learn-more-btn {
+            background: linear-gradient(135deg, var(--card-color, #667eea), var(--card-color-secondary, #764ba2));
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .learn-more-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+        
+        .page-header {
+            text-align: center;
+            padding: 5rem 0 3rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .page-header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .page-header .subtitle {
+            font-size: 1.3rem;
+            opacity: 0.95;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .stats-bar {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        /* Color schemes for different anxiety types */
+        .card-normal { --card-color: #48bb78; --card-color-secondary: #38a169; }
+        .card-gad { --card-color: #ed8936; --card-color-secondary: #dd6b20; }
+        .card-panic { --card-color: #f56565; --card-color-secondary: #e53e3e; }
+        .card-social { --card-color: #9f7aea; --card-color-secondary: #805ad5; }
+        .card-phobia { --card-color: #4299e1; --card-color-secondary: #3182ce; }
+        .card-agoraphobia { --card-color: #38b2ac; --card-color-secondary: #319795; }
+        .card-separation { --card-color: #ec4899; --card-color-secondary: #d53f8c; }
+        .card-mutism { --card-color: #a78bfa; --card-color-secondary: #8b5cf6; }
+        .card-ocd { --card-color: #fbb6ce; --card-color-secondary: #f687b3; }
+        .card-ptsd { --card-color: #fc8181; --card-color-secondary: #f56565; }
+        
+        @media (max-width: 768px) {
+            .anxiety-types-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                padding: 2rem 1rem;
+            }
+            
+            .page-header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .stats-bar {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+
+</head>
+
+<body id="top">
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader"> 
+    	<div id="loader"></div>
+    </div>
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="s-header__logo">
+            <a class="logo" href="index.html">
+                <span class="logo-text">Easeup</span>
+            </a>
+        </div>
+
+        <div class="row s-header__navigation">
+
+            <nav class="s-header__nav-wrap">
+
+                <h3 class="s-header__nav-heading h6">Navigate to</h3>
+
+                <ul class="s-header__nav">
+                    <li><a href="index.html" title="">Home</a></li>
+                    <li class="has-children">
+                        <a href="#0" title="">Anxiety Types</a>
+                        <ul class="sub-menu">
+                            <li><a href="Normal_anxiety.html">Normal Anxiety</a></li>
+                            <li><a href="GAD.html">Generalized Anxiety Disorder</a></li>
+                            <li><a href="Panic_Disorder.html">Panic Disorder</a></li>
+                            <li><a href="Social_Anxiety_Disorder.html">Social Anxiety Disorder</a></li>
+                            <li><a href="Specific_Phobias.html">Specific Phobias</a></li>
+                            <li><a href="Agoraphobia.html">Agoraphobia</a></li>
+                            <li><a href="Separation_Anxiety_Disorder.html">Separation Anxiety Disorder</a></li>
+                            <li><a href="Selective_Mutism.html">Selective Mutism</a></li>
+                            <li><a href="Obsessive_Compulsive_Disorder.html">Obsessive-Compulsive Disorder</a></li>
+                            <li><a href="Post_Traumatic_Disorder.html">Post-Traumatic Disorder</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children">
+                        <a href="#0" title="">Blogs</a>
+                        <ul class="sub-menu">
+                            <li><a href="video_landing_page.html">Videos</a></li>
+                            <li><a href="podcast_landing_Cast.html">Podcast</a></li>
+                            <li><a href="case_studies.html">Case Studies</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children">
+                        <a href="#" title="">Resources</a>
+                        <ul class="sub-menu">
+                            <li><a href="Worksheet.html">📝 Worksheet</a></li>
+                            <li><a class="highlight-link" href="pdfs/Anxiety Management Guide.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Download Anxiety Management Guide</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html" title="">About</a></li>
+                    <li><a href="contact.html" title="">Contact</a></li>
+                </ul> <!-- end s-header__nav -->
+
+                <a href="#0" title="Close Menu" class="s-header__overlay-close close-mobile-menu">Close</a>
+
+            </nav> <!-- end s-header__nav-wrap -->
+
+        </div> <!-- end s-header__navigation -->
+
+        <a class="s-header__toggle-menu" href="#0" title="Menu"><span>Menu</span></a>
+
+        <div class="s-header__search">
+
+            <div class="s-header__search-inner">
+                <div class="row wide">
+
+                    <form role="search" method="get" class="s-header__search-form" action="#">
+                        <label>
+                            <span class="h-screen-reader-text">Search for:</span>
+                            <input type="search" class="s-header__search-field" placeholder="Search for..." value="" name="s" title="Search for:" autocomplete="off">
+                        </label>
+                        <input type="submit" class="s-header__search-submit" value="Search"> 
+                    </form>
+
+                    <a href="#0" title="Close Search" class="s-header__overlay-close">Close</a>
+
+                </div> <!-- end row -->
+            </div> <!-- s-header__search-inner -->
+
+        </div> <!-- end s-header__search wrap -->	
+
+        <a class="s-header__search-trigger" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.982 17.983"><path fill="#010101" d="M12.622 13.611l-.209.163A7.607 7.607 0 017.7 15.399C3.454 15.399 0 11.945 0 7.7 0 3.454 3.454 0 7.7 0c4.245 0 7.699 3.454 7.699 7.7a7.613 7.613 0 01-1.626 4.714l-.163.209 4.372 4.371-.989.989-4.371-4.372zM7.7 1.399a6.307 6.307 0 00-6.3 6.3A6.307 6.307 0 007.7 14c3.473 0 6.3-2.827 6.3-6.3a6.308 6.308 0 00-6.3-6.301z"/></svg>
+        </a>
+
+    </header> <!-- end s-header -->
+
+    <!-- page header
+    ================================================== -->
+    <div class="page-header">
+        <div class="row">
+            <div class="column">
+                <h1>Understanding Anxiety</h1>
+                <p class="subtitle">Explore the different types of anxiety disorders, their symptoms, and find the support you need on your mental health journey.</p>
+                <div class="stats-bar">
+                    <div class="stat-item">
+                        <span class="stat-number">40M</span>
+                        <span class="stat-label">Adults Affected</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10</span>
+                        <span class="stat-label">Main Types</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Treatable</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- content
+    ================================================== -->
+    <section class="s-content">
+        <div class="row">
+            <div class="column large-12">
+                
+                <div class="anxiety-types-grid">
+                    
+                    <!-- Normal Anxiety -->
+                    <div class="anxiety-card card-normal" onclick="location.href='Normal_Anxiety.html'">
+                        <div class="anxiety-icon">😌</div>
+                        <div class="anxiety-info">
+                            <h3 class="anxiety-title">Normal Anxiety</h3>
+                            <span class="anxiety-severity severity-mild">Natural Response</span>
+                            <p class="anxiety-description">
+                                A natural emotional response to stress or uncertainty that everyone experiences from time to time.
+                            </p>
+                            <div class="anxiety-symptoms">
+                                <div class="symptoms-title">Common Signs:</div>
+                                <div class="symptoms-list">Temporary worry, nervousness before events, manageable stress responses</div>
+                            </div>
+                            <button class="learn-more-btn">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Generalized Anxiety Disorder -->
+                    <div class="anxiety-card card-gad" onclick="location.href='GAD.html'">
+                        <div class="anxiety-icon">🌪️</div>
+                        <div class="anxiety-info">
+                            <h3 class="anxiety-title">Generalized Anxiety Disorder</h3>
+                            <span class="anxiety-severity severity-moderate">Persistent Worry</span>
+                            <p class="anxiety-description">
+                                Excessive, uncontrollable worry about everyday situations that persists for months.
+                            </p>
+                            <div class="anxiety-symptoms">
+                                <div class="symptoms-title">Key Symptoms:</div>
+                                <div class="symptoms-list">Restlessness, fatigue, difficulty concentrating, muscle tension</div>
+                            </div>
+                            <button class="learn-more-btn">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Panic Disorder -->
+                    <div class="anxiety-card card-panic" onclick="location.href='Panic_Disorder.html'">
+                        <div class="anxiety-icon">⚡</div>
+                        <div class="anxiety-info">
+                            <h3 class="anxiety-title">Panic Disorder</h3>
+                            <span class="anxiety-severity severity-severe">Intense Episodes</span>
+                            <p class="anxiety-description">
+                                Recurrent, unexpected panic attacks with intense fear and physical symptoms.
+                            </p>
+                            <div class="anxiety-symptoms">
+                                <div class="symptoms-title">Panic Symptoms:</div>
+                                <div class="symptoms-list">Heart palpitations, sweating, trembling, shortness of breath</div>
+                            </div>
+                            <button class="learn-more-btn">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Social Anxiety Disorder -->
+                    <div class="anxiety-card card-social" onclick="location.href='Social_Anxiety_Disorder.html'">
+                        <div class="anxiety-icon">👥</div>
+                        <div class="anxiety-info">
+                            <h3 class="anxiety-title">Social Anxiety Disorder</h3>
+                            <span class="anxiety-severity severity-moderate">Social Fear</span>
+                            <p class="anxiety-description">
+                                Intense fear of social situations and being judged or embarrassed by others.
+                            </p>
+                            <div class="anxiety-symptoms">
+                                <div class="symptoms-title">Social Signs:</div>
+                                <div class="symptoms-list">Blushing, excessive sweating, avoiding social events, fear of speaking</div>
+                            </div>
+                            <button class="learn-more-btn">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Specific Phobias -->
+                    <div class="anxiety-card card-phobia" onclick="location.href='Specific_phobias.html'">
+                        <div class="anxiety-icon">🕷️</div>
+                        <div class="anxiety-info">
+                            <h3 class="anxiety-title">Specific Phobias</h3>
+                            <span class="anxiety-severity severity-moderate">Object/Situation Fear</span>
+                            <p class="anxiety-description">
+                                Excessive and irrational fear of specific objects, animals, or situations.
+                            </p>
+                            <div class="anxiety-symptoms">
+                                <div class="symptoms-title">Common Phobias:</div>
+                                <div class="symptoms-list">Heights, spiders, flying, blood, enclosed spaces, animals</div>
+                            </div>
+                            <button class="learn-more-btn">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Agoraphobia -->
+                    <div class="anxiety-card card-agoraphobia" onclick="location.href='Agoraphobia.html'">
+                        <div class="anxiety-icon">🏠</div>
+                        <div class="anxiety-info">
+                            <h3 class="anxiety-title">Agoraphobia</h3>
+                            <span class="anxiety-severity severity-severe">Space/Escape Fear</span>
+                            <p class="anxiety-description">
+                                Fear of places or situations where escape might be difficult or help unavailable.
+                            </p>
+                            <div class="anxiety-symptoms">
+                                <div class="symptoms-title">Avoided Places:</div>
+                                <div class="symptoms-list">Crowds, public transport, open spaces, being alone outside home</div>
+                            </div>
+                            <button class="learn-more-btn">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Separation Anxiety Disorder -->
+                    <div class="anxiety-card card-separation" onclick="location.href='Separation_Anxiety_Disorder.html'">
+                        <div class="anxiety-icon">👶</div>
+                        <div class="anxiety-info">
+                            <h3 class="anxiety-title">Separation Anxiety Disorder</h3>
+                            <span class="anxiety-severity severity-moderate">Attachment Fear</span>
+                            <p class="anxiety-description">
+                                Excessive fear of being separated from important people or places of security.
+                            </p>
+                            <div class="anxiety-symptoms">
+                                <div class="symptoms-title">Signs Include:</div>
+                                <div class="symptoms-list">Clinginess, nightmares, refusal to leave home, physical complaints</div>
+                            </div>
+                            <button class="learn-more-btn">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Selective Mutism -->
+                    <div class="anxiety-card card-mutism" onclick="location.href='Selective_Mutism.html'">
+                        <div class="anxiety-icon">🤐</div>
+                        <div class="anxiety-info">
+                            <h3 class="anxiety-title">Selective Mutism</h3>
+                            <span class="anxiety-severity severity-moderate">Communication Anxiety</span>
+                            <p class="anxiety-description">
+                                Inability to speak in specific social situations despite speaking normally elsewhere.
+                            </p>
+                            <div class="anxiety-symptoms">
+                                <div class="symptoms-title">Characteristics:</div>
+                                <div class="symptoms-list">Silence in school/public, normal speech at home, social withdrawal</div>
+                            </div>
+                            <button class="learn-more-btn">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Obsessive-Compulsive Disorder -->
+                    <div class="anxiety-card card-ocd" onclick="location.href='Obsessive_Compulsive_Disorder.html'">
+                        <div class="anxiety-icon">🔄</div>
+                        <div class="anxiety-info">
+                            <h3 class="anxiety-title">Obsessive-Compulsive Disorder (OCD)</h3>
+                            <span class="anxiety-severity severity-severe">Repetitive Patterns</span>
+                            <p class="anxiety-description">
+                                Unwanted intrusive thoughts (obsessions) and repetitive behaviors (compulsions).
+                            </p>
+                            <div class="anxiety-symptoms">
+                                <div class="symptoms-title">Common Patterns:</div>
+                                <div class="symptoms-list">Hand washing, checking, counting, arranging, intrusive thoughts</div>
+                            </div>
+                            <button class="learn-more-btn">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Post-Traumatic Stress Disorder -->
+                    <div class="anxiety-card card-ptsd" onclick="location.href='Post_Traumatic_Disorder.html'">
+                        <div class="anxiety-icon">💭</div>
+                        <div class="anxiety-info">
+                            <h3 class="anxiety-title">Post-Traumatic Stress Disorder</h3>
+                            <span class="anxiety-severity severity-severe">Trauma Response</span>
+                            <p class="anxiety-description">
+                                Anxiety disorder that develops after experiencing or witnessing a traumatic event.
+                            </p>
+                            <div class="anxiety-symptoms">
+                                <div class="symptoms-title">Core Symptoms:</div>
+                                <div class="symptoms-list">Flashbacks, nightmares, avoidance, emotional numbing, hypervigilance</div>
+                            </div>
+                            <button class="learn-more-btn">Learn More</button>
+                        </div>
+                    </div>
+
+                </div> <!-- end anxiety-types-grid -->
+
+            </div> <!-- end column -->
+        </div> <!-- end row -->
+        
+        <!-- Additional Info Section -->
+        <div class="row" style="margin-top: 4rem; padding: 3rem 0; background: #f8fafc; border-radius: 16px;">
+            <div class="column large-12" style="text-align: center;">
+                <h2 style="margin-bottom: 1rem; color: #2d3748;">Need Professional Help?</h2>
+                <p style="font-size: 1.1rem; color: #4a5568; max-width: 600px; margin: 0 auto 2rem;">
+                    If you're experiencing symptoms of anxiety that interfere with your daily life, remember that help is available. 
+                    Professional treatment can significantly improve your quality of life.
+                </p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="Get_support.html">
+                    <button style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; border: none; padding: 1rem 2rem; border-radius: 25px; font-weight: 600; cursor: pointer;">Find a Therapist</button></a>
+                    <a href="Worksheet.html">
+                    <button style="background: transparent; color: #667eea; border: 2px solid #667eea; padding: 1rem 2rem; border-radius: 25px; font-weight: 600; cursor: pointer;">Take Self-Assessment</button></a>
+                </div>
+            </div>
+        </div>
+        
+    </section> <!-- end s-content -->
+
+<!-- footer
+ ================================================== -->
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Google Font for Soft Look -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+
+    <style>
+    footer a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  margin: 5px 0;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #5c67f2;
+}
+
+</style>
+    <footer class="s-footer" style="background: linear-gradient(135deg, #f9f9f9, #e6ecff); padding: 60px 20px 20px; box-shadow: 0 -5px 30px rgba(0,0,0,0.1); border-radius: 40px 40px 0 0; font-family: 'Segoe UI', sans-serif;">
+
+  <div class="s-footer__main" style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px;">
+    
+    <!-- About Section -->
+    <div style="flex: 1 1 250px; min-width: 250px;">
+      <h5 style="font-size: 18px;"><i class="fas fa-leaf"></i> About EaseUp</h5>
+      <p style="line-height: 1.6;">
+        EaseUp offers evidence-based mental wellness resources. We empower people to manage anxiety and stress through support, tools, and community.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div style="flex: 1 1 180px; min-width: 180px;">
+      <h5 style="font-size: 18px;"><i class="fas fa-link"></i> Quick Links</h5>
+      <ul style="list-style: none; padding: 0; margin: 0;">
+        <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+        <li><a href="Blogs_landing_page.html"><i class="fa-solid fa-truck-medical"></i> Help Center</a></li>
+        <li><a href="FAQ's.html"><i class="fas fa-question-circle"></i> FAQs</a></li>
+        <li><a href="terms.html"><i class="fas fa-file-contract"></i> Terms</a></li>
+        <li><a href="privacy.html"><i class="fas fa-user-shield"></i> Privacy</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Media -->
+    <div style="flex: 1 1 180px; min-width: 180px;">
+      <h5 style="font-size: 18px;"><i class="fas fa-share-alt"></i> Follow Us</h5>
+      <ul style="list-style: none; padding: 0; margin: 0;">
+        <li><a href="https://x.com/Easeup_563" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+        <li><a href="https://www.instagram.com/easeup563/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+      </ul>
+    </div>
+
+    <!-- Call to Action -->
+    <div style="flex: 1 1 300px; min-width: 300px;">
+      <h5 style="font-size: 18px;"><i class="fas fa-hands-helping"></i> Need Support?</h5>
+      <p style="line-height: 1.6;">Explore our resource hub, read inspiring stories, or reach out to our team for guidance in your mental health journey.</p>
+      <a href="Blogs_landing_page.html" style="display: inline-block; margin-top: 10px; background: #5c67f2; color: white; padding: 10px 20px; border-radius: 30px; text-decoration: none; box-shadow: 0 5px 15px rgba(92, 103, 242, 0.3); transition: background 0.3s;">Visit Help Center</a>
+    </div>
+
+  </div>
+
+  <!-- Footer Bottom -->
+  <div style="text-align: center; padding-top: 30px; border-top: 1px solid #ccc; margin-top: 40px;">
+    <p style="margin: 0;">© 2025 <strong>EaseUp</strong>. All rights reserved.</p>
+    <p style="margin: 5px 0;">Designed with <i class="fas fa-heart" style="color: #ff4d6d;"></i> for mental wellness by Team Ease up</p>
+
+    <!-- Back to Top -->
+    <div style="margin-top: 15px;">
+      <a href="#top" title="Back to Top" style="display: inline-block; background: #5c67f2; color: white; padding: 10px; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.2); transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+  </div>
+
+</footer>
+
+
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

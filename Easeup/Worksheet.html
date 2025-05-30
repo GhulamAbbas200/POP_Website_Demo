@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Worksheet- EaseUp</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style type="text/css" media="screen">
+        .s-styles {
+            padding-bottom: var(--vspace-4);
+        }
+        .s-styles > .row {
+            max-width: var(--width-max);
+        }
+        .s-styles .intro h1 {
+            margin-top: 0;
+        }
+    </style>
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script defer src="js/fontawesome/all.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch Icon2.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon 32x32 2.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon 16x16 2.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+<body id="top">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader"> 
+    	<div id="loader"></div>
+    </div>
+
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header s-header--opaque">
+
+        <div class="s-header__logo">
+            <a class="logo" href="index.html">
+                <span class="logo-text">Easeup</span>
+            </a>
+        </div>
+
+        <div class="row s-header__navigation">
+
+            <nav class="s-header__nav-wrap">
+
+                <h3 class="s-header__nav-heading h6">Navigate to</h3>
+
+                <ul class="s-header__nav">
+                    <li><a href="index.html" title="">Home</a></li>
+                    <li class="has-children">
+                        <a href="#0" title="">Anxiety Types</a>
+                        <ul class="sub-menu">
+                            <li><a href="Normal_anxiety.html">Normal Anxiety</a></li>
+                            <li><a href="GAD.html">Generalized Anxiety Disorder</a></li>
+                            <li><a href="Panic_Disorder.html">Panic Disorder</a></li>
+                            <li><a href="Social_Anxiety_Disorder.html">Social Anxiety Disorder</a></li>
+                            <li><a href="Specific_Phobias.html">Specific Phobias</a></li>
+                            <li><a href="Agoraphobia.html">Agoraphobia</a></li>
+                            <li><a href="Separation_Anxiety_Disorder.html">Separation Anxiety Disorder</a></li>
+                            <li><a href="Selective_Mutism.html">Selective Mutism</a></li>
+                            <li><a href="Obsessive_Compulsive_Disorder.html">Obsessive-Compulsive Disorder</a></li>
+                            <li><a href="Post_Traumatic_Disorder.html">Post-Traumatic Disorder</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children">
+                        <a href="#0" title="">Blogs</a>
+                        <ul class="sub-menu">
+                            <li><a href="video_landing_page.html">Videos</a></li>
+                            <li><a href="podcast_landing_Cast.html">Podcast</a></li>
+                            <li><a href="case_studies.html">Case Studies</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children">
+                        <a href="#" title="">Resources</a>
+                        <ul class="sub-menu">
+                            <li><a href="Worksheet.html">📝 Worksheet</a></li>
+                            <li><a class="highlight-link" href="pdfs/Anxiety Management Guide.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Download Anxiety Management Guide</a></li>
+                        </ul>
+                    </li>
+                    <li class="current"><a href="about.html" title="">About</a></li>
+                    <li><a href="contact.html" title="">Contact</a></li>
+                </ul> <!-- end s-header__nav -->
+
+                <a href="#0" title="Close Menu" class="s-header__overlay-close close-mobile-menu">Close</a>
+
+            </nav> <!-- end s-header__nav-wrap -->
+
+        </div> <!-- end s-header__navigation -->
+
+        <a class="s-header__toggle-menu" href="#0" title="Menu"><span>Menu</span></a>
+
+        <div class="s-header__search">
+
+            <div class="s-header__search-inner">
+                <div class="row wide">
+
+                    <form role="search" method="get" class="s-header__search-form" action="#">
+                        <label>
+                            <span class="h-screen-reader-text">Search for:</span>
+                            <input type="search" class="s-header__search-field" placeholder="Search for..." value="" name="s" title="Search for:" autocomplete="off">
+                        </label>
+                        <input type="submit" class="s-header__search-submit" value="Search"> 
+                    </form>
+
+                    <a href="#0" title="Close Search" class="s-header__overlay-close">Close</a>
+
+                </div> <!-- end row -->
+            </div> <!-- s-header__search-inner -->
+
+        </div> <!-- end s-header__search wrap -->	
+
+        <a class="s-header__search-trigger" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.982 17.983"><path fill="#010101" d="M12.622 13.611l-.209.163A7.607 7.607 0 017.7 15.399C3.454 15.399 0 11.945 0 7.7 0 3.454 3.454 0 7.7 0c4.245 0 7.699 3.454 7.699 7.7a7.613 7.613 0 01-1.626 4.714l-.163.209 4.372 4.371-.989.989-4.371-4.372zM7.7 1.399a6.307 6.307 0 00-6.3 6.3A6.307 6.307 0 007.7 14c3.473 0 6.3-2.827 6.3-6.3a6.308 6.308 0 00-6.3-6.301z"/></svg>
+        </a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- content
+    ================================================== -->
+    <style>
+        body {
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .worksheet-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .intro-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .intro-card h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .intro-card p {
+            font-size: 1.1rem;
+            color: #6c757d;
+            margin-bottom: 30px;
+        }
+
+        .start-btn {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .start-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+        }
+
+        .worksheet-form {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .question-card {
+            background: #f8f9ff;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-left: 5px solid #667eea;
+            transition: all 0.3s ease;
+        }
+
+        .question-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .question-text {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .option-group {
+            display: grid;
+            gap: 12px;
+        }
+
+        .option-label {
+            display: flex;
+            align-items: center;
+            padding: 12px 18px;
+            background: white;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .option-label:hover {
+            background: #667eea;
+            color: white;
+            transform: translateX(3px);
+        }
+
+        .option-label input[type="radio"] {
+            margin-right: 12px;
+            transform: scale(1.2);
+        }
+
+        .option-label input[type="radio"]:checked + span {
+            font-weight: 600;
+        }
+
+        .option-label:has(input:checked) {
+            background: #667eea;
+            color: white;
+            border-color: #5a6fd8;
+        }
+
+        .submit-btn {
+            background: linear-gradient(135deg, #2ecc71, #27ae60);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(46, 204, 113, 0.3);
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(46, 204, 113, 0.4);
+        }
+
+        .results-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-left: 5px solid #2ecc71;
+        }
+
+        .results-card h2 {
+            color: #2ecc71;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .download-btn {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(231, 76, 60, 0.3);
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(231, 76, 60, 0.4);
+            color: white;
+            text-decoration: none;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .progress-bar {
+            background: #e9ecef;
+            border-radius: 10px;
+            height: 8px;
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            height: 100%;
+            width: 0%;
+            transition: width 0.3s ease;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .worksheet-container {
+                padding: 20px 15px;
+            }
+            
+            .intro-card, .worksheet-form, .results-card {
+                padding: 25px;
+            }
+            
+            .intro-card h1 {
+                font-size: 2rem;
+            }
+        }
+
+        .highlight-link {
+    color: #e74c3c;
+    font-weight: bold;
+}
+.highlight-link:hover {
+    color: #c0392b;
+}
+
+
+    </style>
+
+    <div class="worksheet-container">
+        <div class="intro-card">
+            <h1>💭 Let's Talk About Your Anxiety</h1>
+            <p>Take a few minutes to reflect on your experiences. This isn't a test - it's a conversation to help you understand your patterns better.</p>
+            <button class="start-btn" onclick="startWorksheet()">Begin Your Journey</button>
+        </div>
+
+        <div id="worksheet" class="worksheet-form hidden">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+
+            <form id="anxietyForm">
+                <div class="question-card">
+                    <div class="question-text">When you think about feeling anxious, what situation first comes to mind?</div>
+                    <div class="option-group">
+                        <label class="option-label">
+                            <input type="radio" name="q1" value="Being in crowded spaces">
+                            <span>Being in crowded spaces where I feel overwhelmed</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q1" value="Speaking or presenting">
+                            <span>Speaking up or presenting in front of others</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q1" value="Being alone with thoughts">
+                            <span>Being alone with my thoughts for too long</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q1" value="Time pressure">
+                            <span>Feeling rushed or under time pressure</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <div class="question-text">If you had to describe when anxiety visits you most often, what would you say?</div>
+                    <div class="option-group">
+                        <label class="option-label">
+                            <input type="radio" name="q2" value="Early morning">
+                            <span>Right when I wake up - my mind starts racing</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q2" value="Before sleep">
+                            <span>At night when I'm trying to wind down</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q2" value="Social situations">
+                            <span>When I'm around people, especially new faces</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q2" value="After busy periods">
+                            <span>After intense work or busy periods</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <div class="question-text">What's usually the first physical sign that tells you anxiety is showing up?</div>
+                    <div class="option-group">
+                        <label class="option-label">
+                            <input type="radio" name="q3" value="Heart racing">
+                            <span>My heart starts racing or pounding</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q3" value="Sweaty palms">
+                            <span>My palms get sweaty or clammy</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q3" value="Stomach knots">
+                            <span>I get that knot-in-stomach feeling</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q3" value="Tension headache">
+                            <span>Tension builds up in my head or neck</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <div class="question-text">When anxiety kicks in, what kind of thoughts tend to take over?</div>
+                    <div class="option-group">
+                        <label class="option-label">
+                            <input type="radio" name="q4" value="Catastrophic thinking">
+                            <span>"What if everything goes wrong?"</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q4" value="Self-doubt">
+                            <span>"I can't handle this" or "I'm not capable"</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q4" value="Social judgment">
+                            <span>"Everyone is watching and judging me"</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q4" value="Inadequacy">
+                            <span>"I'm never going to be good enough"</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <div class="question-text">How does your body typically respond when you're feeling really anxious?</div>
+                    <div class="option-group">
+                        <label class="option-label">
+                            <input type="radio" name="q5" value="Trembling">
+                            <span>I start shaking or trembling</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q5" value="Breathing issues">
+                            <span>My breathing becomes shallow or difficult</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q5" value="Dizziness">
+                            <span>I feel lightheaded or dizzy</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q5" value="Muscle tension">
+                            <span>My muscles tense up, especially shoulders/jaw</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <div class="question-text">Thinking about your past, what experience still makes your anxiety spike?</div>
+                    <div class="option-group">
+                        <label class="option-label">
+                            <input type="radio" name="q6" value="Past failure">
+                            <span>A time when I failed at something important</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q6" value="Relationship conflict">
+                            <span>A difficult conflict with someone I care about</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q6" value="Job loss">
+                            <span>Losing a job or facing financial instability</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q6" value="Health scare">
+                            <span>A health scare or medical concern</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <div class="question-text">What kind of environment tends to make your anxiety worse?</div>
+                    <div class="option-group">
+                        <label class="option-label">
+                            <input type="radio" name="q7" value="Loud environments">
+                            <span>Loud, chaotic places with lots of noise</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q7" value="Confined spaces">
+                            <span>Small, enclosed spaces where I feel trapped</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q7" value="Overstimulating">
+                            <span>Bright lights and overwhelming sensory input</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q7" value="Hectic schedule">
+                            <span>When my schedule is packed and overwhelming</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <div class="question-text">How often do worried thoughts pop up without any clear trigger?</div>
+                    <div class="option-group">
+                        <label class="option-label">
+                            <input type="radio" name="q8" value="Multiple times daily">
+                            <span>Multiple times throughout most days</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q8" value="Few times weekly">
+                            <span>A few times each week</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q8" value="During stress">
+                            <span>Mainly when I'm already stressed about something</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q8" value="Occasionally">
+                            <span>Only occasionally, not very often</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <div class="question-text">Are there certain types of people who tend to make you feel more anxious?</div>
+                    <div class="option-group">
+                        <label class="option-label">
+                            <input type="radio" name="q9" value="Authority figures">
+                            <span>Bosses, teachers, or anyone in positions of power</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q9" value="New people">
+                            <span>People I don't know well or strangers</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q9" value="Family members">
+                            <span>Certain family members or close relatives</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q9" value="Online interactions">
+                            <span>People I mainly interact with through social media</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <div class="question-text">When you're scrolling through social media, what usually triggers anxious feelings?</div>
+                    <div class="option-group">
+                        <label class="option-label">
+                            <input type="radio" name="q10" value="Bad news">
+                            <span>Seeing negative news or upsetting current events</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q10" value="Comparison">
+                            <span>Comparing my life to what others post</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q10" value="Conflict">
+                            <span>Reading arguments or heated discussions</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q10" value="Information overload">
+                            <span>Too many notifications or constant updates</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button type="button" class="submit-btn" onclick="submitAnswers()">Get My Insights</button>
+            </form>
+        </div>
+        
+        <div id="results" class="results-card hidden"></div>
+    </div>
+    
+    <script>
+        let currentProgress = 0;
+
+        function startWorksheet() {
+            document.querySelector('.intro-card').style.display = 'none';
+            document.getElementById('worksheet').classList.remove('hidden');
+            updateProgress();
+        }
+
+        function updateProgress() {
+            const questions = document.querySelectorAll('input[type="radio"]:checked');
+            const totalQuestions = 10;
+            const progress = (questions.length / totalQuestions) * 100;
+            document.getElementById('progressFill').style.width = progress + '%';
+        }
+
+        // Add event listeners to all radio buttons to update progress
+        document.addEventListener('DOMContentLoaded', function() {
+            const radioButtons = document.querySelectorAll('input[type="radio"]');
+            radioButtons.forEach(radio => {
+                radio.addEventListener('change', updateProgress);
+            });
+        });
+
+        function submitAnswers() {
+    const form = document.getElementById('anxietyForm');
+    const formData = new FormData(form);
+    let responses = [];
+    let unansweredQuestions = [];
+    
+    // Check if all questions are answered
+    for (let i = 1; i <= 10; i++) {
+        const answer = formData.get('q' + i);
+        if (!answer) {
+            unansweredQuestions.push(i);
+        }
+        responses.push(answer || "Not answered");
+    }
+
+    // If there are unanswered questions, show error message and don't proceed
+    if (unansweredQuestions.length > 0) {
+        // Create or update error message
+        let errorDiv = document.getElementById('errorMessage');
+        if (!errorDiv) {
+            errorDiv = document.createElement('div');
+            errorDiv.id = 'errorMessage';
+            errorDiv.style.cssText = `
+                background: #fee;
+                border: 2px solid #f88;
+                border-radius: 10px;
+                padding: 20px;
+                margin: 20px 0;
+                text-align: center;
+                color: #c33;
+                font-weight: 600;
+                animation: shake 0.5s ease;
+            `;
+            
+            // Add shake animation
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes shake {
+                    0%, 100% { transform: translateX(0); }
+                    25% { transform: translateX(-5px); }
+                    75% { transform: translateX(5px); }
+                }
+            `;
+            document.head.appendChild(style);
+            
+            // Insert error message before the submit button
+            const submitBtn = document.querySelector('.submit-btn');
+            submitBtn.parentNode.insertBefore(errorDiv, submitBtn);
+        }
+        
+        const questionText = unansweredQuestions.length === 1 ? 'question' : 'questions';
+        const questionNumbers = unansweredQuestions.join(', ');
+        errorDiv.innerHTML = `
+            <i class="fas fa-exclamation-triangle" style="margin-right: 10px;"></i>
+            Please answer all questions before getting your insights.<br>
+            You haven't answered ${questionText}: ${questionNumbers}
+        `;
+        
+        // Scroll to the first unanswered question
+        const firstUnansweredQuestion = document.querySelector(`input[name="q${unansweredQuestions[0]}"]`);
+        if (firstUnansweredQuestion) {
+            firstUnansweredQuestion.closest('.question-card').scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+            
+            // Highlight the unanswered question temporarily
+            const questionCard = firstUnansweredQuestion.closest('.question-card');
+            questionCard.style.border = '3px solid #f88';
+            questionCard.style.animation = 'pulse 1s ease-in-out';
+            
+            setTimeout(() => {
+                questionCard.style.border = '';
+                questionCard.style.animation = '';
+            }, 2000);
+        }
+        
+        return; // Don't proceed with generating insights
+    }
+
+    // Remove error message if it exists
+    const errorDiv = document.getElementById('errorMessage');
+    if (errorDiv) {
+        errorDiv.remove();
+    }
+
+    // Hide the form
+    document.getElementById('worksheet').classList.add('hidden');
+
+    // Generate personalized insights
+    let insights = generateInsights(responses);
+    
+    const resultsHTML = `
+        <h2>🌟 Your Personal Anxiety Profile</h2>
+        <div style="text-align: left; margin: 30px 0;">
+            <h3 style="color: #667eea; margin-bottom: 15px;">What We Discovered:</h3>
+            <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 20px;">${insights.mainPattern}</p>
+            
+            <h3 style="color: #667eea; margin-bottom: 15px;">Your Unique Triggers:</h3>
+            <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 20px;">${insights.triggers}</p>
+            
+            <h3 style="color: #667eea; margin-bottom: 15px;">Gentle Reminders:</h3>
+            <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 30px;">${insights.reminder}</p>
+        </div>
+        
+        <div style="background: #f8f9ff; padding: 20px; border-radius: 15px; margin: 20px 0;">
+            <p style="font-style: italic; color: #6c757d; margin: 0;">
+                <strong>Remember:</strong> This reflection is meant to help you understand yourself better. 
+                If you're experiencing persistent anxiety that affects your daily life, consider reaching out to a mental health professional.
+            </p>
+        </div>
+        
+        <a class="download-btn" href="#" onclick="downloadSummary()">📄 Save Your Insights</a>
+    `;
+    
+    document.getElementById('results').innerHTML = resultsHTML;
+    document.getElementById('results').classList.remove('hidden');
+}
+
+
+        function generateInsights(responses) {
+            let socialTriggers = 0;
+            let generalizedPattern = 0;
+            let performanceAnxiety = 0;
+            
+            // Analyze patterns
+            if (responses[0]?.includes('crowded') || responses[0]?.includes('Speaking')) socialTriggers++;
+            if (responses[1]?.includes('Social') || responses[8]?.includes('New people')) socialTriggers++;
+            if (responses[3]?.includes('judging')) socialTriggers++;
+            
+            if (responses[7]?.includes('Multiple') || responses[7]?.includes('Few times')) generalizedPattern++;
+            if (responses[3]?.includes('wrong') || responses[3]?.includes('Inadequacy')) generalizedPattern++;
+            
+            if (responses[0]?.includes('Speaking') || responses[0]?.includes('pressure')) performanceAnxiety++;
+            if (responses[5]?.includes('failure')) performanceAnxiety++;
+
+            let mainPattern, triggers, reminder;
+
+            if (socialTriggers >= 2) {
+                mainPattern = "You seem to experience anxiety primarily in social situations. This is incredibly common - many people feel their nervous system activate when they're around others, especially in new or evaluative situations.";
+                triggers = "Your anxiety often appears around interpersonal interactions, whether it's speaking up, being in crowds, or feeling observed by others. These situations can feel overwhelming because they involve uncertainty about others' reactions.";
+                reminder = "Social anxiety is one of the most treatable forms of anxiety. Remember that most people are focused on themselves, not judging you as harshly as you might think.";
+            } else if (generalizedPattern >= 2) {
+                mainPattern = "Your responses suggest a pattern of generalized worry - your mind tends to anticipate potential problems and create 'what if' scenarios. This shows how much you care about doing well and being prepared.";
+                triggers = "You might notice anxiety appearing without obvious external triggers, often in the form of racing thoughts about various life situations, especially during quiet moments or transitions.";
+                reminder = "Your tendency to think ahead can actually be a strength when channeled well. Learning to distinguish between productive planning and worry spirals can be incredibly helpful.";
+            } else if (performanceAnxiety >= 2) {
+                mainPattern = "You appear to experience anxiety most intensely around performance situations - times when you feel evaluated or under pressure to succeed. This often stems from high personal standards.";
+                triggers = "Situations involving deadlines, presentations, or any scenario where your abilities might be assessed tend to activate your anxiety. The fear of not meeting expectations - both your own and others' - can be particularly intense.";
+                reminder = "Performance anxiety often comes from caring deeply about doing well. Remember that mistakes and imperfections are part of being human, and they don't define your worth.";
+            } else {
+                mainPattern = "Your anxiety seems to have a mixed pattern, appearing in various situations and contexts. This suggests you might be experiencing different types of anxiety depending on circumstances.";
+                triggers = "Your triggers appear to be diverse, ranging from environmental factors to interpersonal situations to internal thought patterns. This variety is actually quite normal.";
+                reminder = "Having multiple anxiety triggers doesn't mean your anxiety is more severe - it often just means you're very aware of your internal experiences and sensitive to your environment.";
+            }
+
+            return { mainPattern, triggers, reminder };
+        }
+        
+        function downloadSummary() {
+            // Create a simple text summary
+            const summaryText = `Your Anxiety Insights Summary
+            
+Generated on: ${new Date().toLocaleDateString()}
+
+This personal reflection helped you identify patterns in your anxiety experience. Remember that understanding your triggers and responses is the first step toward managing anxiety effectively.
+
+Key takeaways from your responses:
+- Recognize your unique anxiety patterns
+- Identify environmental and social triggers  
+- Notice physical and emotional responses
+- Practice self-compassion as you work on managing anxiety
+
+For additional support and coping strategies, consider exploring professional resources or evidence-based anxiety management techniques.
+
+---
+Generated by EaseUp Mental Wellness Platform`;
+
+            // Create and download the file
+            const blob = new Blob([summaryText], { type: 'text/plain' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.style.display = 'none';
+            a.href = url;
+            a.download = 'anxiety-insights-summary.txt';
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(url);
+            document.body.removeChild(a);
+        }
+
+    </script>
+<!-- footer
+ ================================================== -->
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Google Font for Soft Look -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+
+    <style>
+    footer a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  margin: 5px 0;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #5c67f2;
+}
+
+</style>
+    <footer class="s-footer" style="background: linear-gradient(135deg, #f9f9f9, #e6ecff); padding: 60px 20px 20px; box-shadow: 0 -5px 30px rgba(0,0,0,0.1); border-radius: 40px 40px 0 0; font-family: 'Segoe UI', sans-serif;">
+
+  <div class="s-footer__main" style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px;">
+    
+    <!-- About Section -->
+    <div style="flex: 1 1 250px; min-width: 250px;">
+      <h5 style="font-size: 18px;"><i class="fas fa-leaf"></i> About EaseUp</h5>
+      <p style="line-height: 1.6;">
+        EaseUp offers evidence-based mental wellness resources. We empower people to manage anxiety and stress through support, tools, and community.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div style="flex: 1 1 180px; min-width: 180px;">
+      <h5 style="font-size: 18px;"><i class="fas fa-link"></i> Quick Links</h5>
+      <ul style="list-style: none; padding: 0; margin: 0;">
+        <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+        <li><a href="Blogs_landing_page.html"><i class="fa-solid fa-truck-medical"></i> Help Center</a></li>
+        <li><a href="FAQ's.html"><i class="fas fa-question-circle"></i> FAQs</a></li>
+        <li><a href="terms.html"><i class="fas fa-file-contract"></i> Terms</a></li>
+        <li><a href="privacy.html"><i class="fas fa-user-shield"></i> Privacy</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Media -->
+    <div style="flex: 1 1 180px; min-width: 180px;">
+      <h5 style="font-size: 18px;"><i class="fas fa-share-alt"></i> Follow Us</h5>
+      <ul style="list-style: none; padding: 0; margin: 0;">
+        <li><a href="https://x.com/Easeup_563" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+        <li><a href="https://www.instagram.com/easeup563/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+      </ul>
+    </div>
+
+    <!-- Call to Action -->
+    <div style="flex: 1 1 300px; min-width: 300px;">
+      <h5 style="font-size: 18px;"><i class="fas fa-hands-helping"></i> Need Support?</h5>
+      <p style="line-height: 1.6;">Explore our resource hub, read inspiring stories, or reach out to our team for guidance in your mental health journey.</p>
+      <a href="Blogs_landing_page.html" style="display: inline-block; margin-top: 10px; background: #5c67f2; color: white; padding: 10px 20px; border-radius: 30px; text-decoration: none; box-shadow: 0 5px 15px rgba(92, 103, 242, 0.3); transition: background 0.3s;">Visit Help Center</a>
+    </div>
+
+  </div>
+
+  <!-- Footer Bottom -->
+  <div style="text-align: center; padding-top: 30px; border-top: 1px solid #ccc; margin-top: 40px;">
+    <p style="margin: 0;">© 2025 <strong>EaseUp</strong>. All rights reserved.</p>
+    <p style="margin: 5px 0;">Designed with <i class="fas fa-heart" style="color: #ff4d6d;"></i> for mental wellness by Team Ease up</p>
+
+    <!-- Back to Top -->
+    <div style="margin-top: 15px;">
+      <a href="#top" title="Back to Top" style="display: inline-block; background: #5c67f2; color: white; padding: 10px; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.2); transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+  </div>
+
+</footer>
+
+
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
